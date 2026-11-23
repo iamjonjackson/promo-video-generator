@@ -1,0 +1,24 @@
+[project]
+name = "promogen"
+version = "0.1.0"
+description = "Generate CapCut-style vertical (9:16) promo videos from a photo folder"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pillow>=10.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+heic = ["pillow-heif"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["promogen"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

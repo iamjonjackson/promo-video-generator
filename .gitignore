@@ -1,0 +1,13 @@
+output/
+output/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+assets/default-audio.mp3
+assets/*.wav
+!assets/fonts/**
+venv/
+.venv/
